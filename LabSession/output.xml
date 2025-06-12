@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.4 on win32)" generated="2025-06-12T09:48:42.243903" rpa="false" schemaversion="5">
+<suite id="s1" name="TspotLab" source="C:\Users\srujx\PycharmProjects\PythonProject\LabSession\TspotLab.robot">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:48:42.737002" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-12T09:48:42.736362" elapsed="8.189418"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-12T09:48:50.926023" elapsed="0.038852"/>
+</kw>
+<status status="PASS" start="2025-06-12T09:48:42.734247" elapsed="8.230750"/>
+</kw>
+<test id="s1-t1" name="form test" line="39">
+<status status="FAIL" start="2025-06-12T09:48:50.965073" elapsed="0.000683">Test cannot be empty.</status>
+</test>
+<kw name="Teardown" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:48:55.967536" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:48:50.966827" elapsed="5.001044"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-12T09:48:55.968302" elapsed="2.434302"/>
+</kw>
+<status status="PASS" start="2025-06-12T09:48:50.966637" elapsed="7.436311"/>
+</kw>
+<status status="FAIL" start="2025-06-12T09:48:42.247234" elapsed="16.155841"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TspotLab" id="s1" pass="0" fail="1" skip="0">TspotLab</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-06-12T09:48:42.724956" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\srujx\PycharmProjects\PythonProject\LabSession\TspotLab.robot", line 0</msg>
+<msg time="2025-06-12T09:48:42.725184" level="ERROR">In source file:
+  File "C:/Users/srujx/PycharmProjects/PythonProject/TestData/tspotData.csv", line 0</msg>
+<msg time="2025-06-12T09:48:42.733014" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${name}.</msg>
+</errors>
+</robot>
