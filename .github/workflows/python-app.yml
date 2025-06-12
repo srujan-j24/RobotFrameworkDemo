@@ -75,5 +75,19 @@ jobs:
       run: |
 
         robot -v BROWSER:chrome --variable HEADLESS:True tests/
+
+         mkdir -p results
+
+         robot --output results/output.xml --log results/log.html --report results/report.html tests/
  
+    - name: Upload Robot Framework Report
+
+      uses: actions/upload-artifact@v4
+
+      with:
+
+            name: robot-reports
+
+            path: results/
+
  
